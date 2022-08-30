@@ -7,10 +7,17 @@ import { AppService } from './app.service';
 import { TestController } from './test/test.controller';
 import { TestService } from './test/test.service';
 import { TweetsModule } from './tweets/tweets.module';
+import { BullModule } from '@nestjs/bull';
 
 @Module({
   imports: [
     ScheduleModule.forRoot(),
+    BullModule.forRoot({
+      redis: {
+        host: 'redis',
+        port: 6379,
+      }
+    }),
     SequelizeModule.forRoot({
       dialect: 'sqlite',
       host: join(__dirname, 'database.sqlite'),

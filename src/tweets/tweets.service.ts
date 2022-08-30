@@ -20,7 +20,7 @@ export class TweetsService {
   }
 
   findOne(id: number) {
-    return `This action returns a #${id} tweet`;
+    return `action returns a #${id} tweet`;
   }
 
   update(id: number, updateTweetDto: UpdateTweetDto) {
