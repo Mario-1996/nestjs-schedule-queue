@@ -1,16 +1,20 @@
-# nestjs-schedule-queue
+# <img src="https://github.com/devicons/devicon/blob/master/icons/nestjs/nestjs-plain.svg" title="Nest" width="40" height="40"/>&nbsp; nestjs-schedule-queue
 
-## Rodar a aplicação
+
+## 📋  Requisistos
+
+-Node
+
+-Docker
+
+## 🔧 Rodar a aplicação
 
 Execute os comandos:
 
-```bash
-yarn
-``` 
-para instalar as dependências &
+para instalar as dependências 
 
 ```bash
-yarn start:dev
+docker-compose up
 ```
 pra iniciar o servidor de desenvolvimento
 
